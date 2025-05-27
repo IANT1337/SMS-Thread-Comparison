@@ -1,6 +1,6 @@
 # SMS Word Cloud Pen Plotter
 
-What began as a text message export/comparison project was transformed into creating physical word-cloud art using a modified Bambu A1 Mini as a pen plotter.
+What began as a text message export/comparison project was transformed into creating physical word-cloud art for a birthday gift using a modified Bambu A1 Mini as a pen plotter.
 
 ---
 
