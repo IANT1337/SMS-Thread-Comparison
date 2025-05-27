@@ -1,6 +1,6 @@
 # SMS Word Cloud Pen Plotter
 
-Transform your Android SMS conversations into physical word-cloud art using a modified Bambu A1 Mini pen plotter.
+What began as a text message export/comparison project was transformed into creating physical word-cloud art using a modified Bambu A1 Mini as a pen plotter.
 
 ---
 
@@ -16,7 +16,6 @@ Transform your Android SMS conversations into physical word-cloud art using a mo
 - [Usage](#usage)  
 - [File Structure](#file-structure)  
 - [Contributing](#contributing)  
-- [License](#license)  
 
 ---
 
@@ -38,6 +37,7 @@ This project takes your SMS conversation export (via **SMS Backup & Restore**), 
 - These 3D printed files and hardware [Easy penholder A1 / A1 Mini Plotter](https://makerworld.com/en/models/1362648-easy-penholder-a1-a1-mini-plotter#profileId-1407684)
 - Modified pen holder within ./3D Files/
 - **Pilot G2 0.5 mm** gel pen
+- some 65lb cardstock
 - 4 small magnets to hold the cardstock
 
 ---
@@ -75,8 +75,15 @@ python word_count_comparison.py \
   -i path/to/input_words.txt \
 ```
 
-* **`input_words.txt`**: .txt file where each line is a string
-
+* **`input_words.txt`**: .txt file where each line is a string *
+  
+Input will be the following format:
+```bash
+lmao
+love
+fun
+excited
+```
 Output will be the following format:
 ```bash
 Metric                    Sent  Received
@@ -138,16 +145,18 @@ excited                     11        35
 1. **Import** `wordcloud.svg` into Bambu Studio.
 2. Scale the imported file such that it fits on the build plate and has a thickness of 0.11mm (one layer).
 3. **Slice** and **Print**.
-4. Watch your pen plot come to life!
+4. Watch bambu plot some stuff
 
 ---
 
 ## Images
 
-1. Pen plotter assembled and in action
-![20250524_145101](https://github.com/user-attachments/assets/bccbfb73-3ceb-4137-a27a-c0965c6c74fa)
+1. Pen plotter assembled
+![20250527_172813](https://github.com/user-attachments/assets/bdc452b6-10ee-4bc0-88b4-34fb79581315)
 
-2. Pen plotter in action
+
+
+3. Pen plotter in action
 https://github.com/user-attachments/assets/165a14ab-92b0-44fc-a954-ca418eff1e58
 
 
