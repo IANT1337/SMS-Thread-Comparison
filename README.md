@@ -32,7 +32,7 @@ This project takes your SMS conversation export (via **SMS Backup & Restore**), 
 - **Python 3.11+** 
   (including xml.etree.ElementTree and argparse)
 - Web browser for [WordClouds.com](https://www.wordclouds.com/)  
-- **Adobe Photoshop** (for compositing/masking, can use GIMP/MS Paint etc)  
+- **Adobe Photoshop** (optional for compositing/masking, can use GIMP/MS Paint etc)  
 - Web access to [FreeConvert PNG-to-SVG](https://www.freeconvert.com/png-to-svg)  
 - **Bambu A1 Mini** 3D printer + **Bambu Studio**
 - These 3D printed files and hardware [Easy penholder A1 / A1 Mini Plotter](https://makerworld.com/en/models/1362648-easy-penholder-a1-a1-mini-plotter#profileId-1407684)
@@ -97,9 +97,10 @@ excited                     11        35
 
 1. Go to [WordClouds.com](https://www.wordclouds.com/).
 2. Upload **`sent.txt`** or **`received.txt`**.
-3. Tweak shape, mask, filter settings.
-4. Ensure the color pallete is black and white (white background, black text)
-5. Download the word-cloud PNG.
+3. Upload the word cloud background image or create/modify one in photoshop
+4. Tweak shape, mask, filter settings.
+5. Ensure the color pallete is high contrast (white background, black text)
+6. Download the word-cloud PNG.
 
 ---
 
@@ -115,7 +116,10 @@ excited                     11        35
 ## Pen Plotter Setup
 
 1. **3D-print** the pen-mount using the link provided, replacing the pen holder with the one in the repo.
-2. Open the pilot G2 pen and move the small spring in the pen tip to above the ink cartrige near the top of the pen. This will allow the pen to travel in Z direction when pressed against the paper.
+   
+    <img width="194" alt="modified_flex_holder" src="https://github.com/user-attachments/assets/f4c8545e-f0a4-42a8-bfb8-c3b965e86fc6" />
+  
+3. Open the pilot G2 pen and move the small spring in the pen tip to above the ink cartrige near the top of the pen. This will allow the pen to travel in Z direction when pressed against the paper.
 4. Attach the mount to your A1 Mini and insert a **Pilot G2 0.5 mm** pen with some shims to ensure it is solid.
 5. In **Bambu Studio**, adjust your machine code:
    * Remove all 'machine gcode' only leaving **G28 X**
@@ -135,6 +139,17 @@ excited                     11        35
 2. Scale the imported file such that it fits on the build plate and has a thickness of 0.11mm (one layer).
 3. **Slice** and **Print**.
 4. Watch your pen plot come to life!
+
+---
+
+## Images
+
+1. Pen plotter assembled and in action
+![20250524_145101](https://github.com/user-attachments/assets/bccbfb73-3ceb-4137-a27a-c0965c6c74fa)
+
+2. Pen plotter in action
+https://github.com/user-attachments/assets/165a14ab-92b0-44fc-a954-ca418eff1e58
+
 
 ---
 
