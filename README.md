@@ -56,13 +56,40 @@ This project takes your SMS conversation export (via **SMS Backup & Restore**), 
 Use the included script to split your SMS XML into two text files:
 
 ```bash
-python sms_parser.py \
+python format_xml.py \
   -i path/to/sms_backup.xml \
   -o ./output
 ```
 
 * **`format_xml.xml`**: Export from SMS Backup & Restore
 * **`output/sent.txt`**, **`output/received.txt`**: ready for word-cloud input
+
+---
+
+## SMS Compare
+
+Use the included script to compare your SMS text files:
+
+```bash
+python word_count_comparison.py \
+  -i path/to/input_words.txt \
+```
+
+* **`input_words.txt`**: .txt file where each line is a string
+
+Output will be the following format:
+```bash
+Metric                    Sent  Received
+----------------------------------------
+Total messages            1770      2004
+
+Word                      Sent  Received
+----------------------------------------
+lmao                        55        90
+love                        22        59
+fun                         40        51
+excited                     11        35
+```
 
 ---
 
